@@ -1,0 +1,4 @@
+{ 
+  "recipes": [ "personal_env_setup" ],
+  "sudo_password": "cnuapp"
+}

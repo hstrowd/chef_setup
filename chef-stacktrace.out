@@ -1,0 +1,20 @@
+Generated at Thu Oct 13 16:33:53 -0500 2011
+NoMethodError: undefined method `ask' for #<Chef::Recipe:0x102246758>
+/Library/Ruby/Gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/recipe_definition_dsl_core.rb:56:in `method_missing'
+/Users/hstrowd/linux_config/chef/cookbooks/personal_env_setup/recipes/default.rb:13:in `from_file'
+/Library/Ruby/Gems/1.8/gems/chef-0.10.4/bin/../lib/chef/cookbook_version.rb:578:in `load_recipe'
+/Library/Ruby/Gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/language_include_recipe.rb:40:in `include_recipe'
+/Library/Ruby/Gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/language_include_recipe.rb:27:in `each'
+/Library/Ruby/Gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/language_include_recipe.rb:27:in `include_recipe'
+/Library/Ruby/Gems/1.8/gems/chef-0.10.4/bin/../lib/chef/run_context.rb:72:in `load'
+/Library/Ruby/Gems/1.8/gems/chef-0.10.4/bin/../lib/chef/run_context.rb:69:in `each'
+/Library/Ruby/Gems/1.8/gems/chef-0.10.4/bin/../lib/chef/run_context.rb:69:in `load'
+/Library/Ruby/Gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:195:in `setup_run_context'
+/Library/Ruby/Gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:159:in `run'
+/Library/Ruby/Gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/solo.rb:192:in `run_application'
+/Library/Ruby/Gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/solo.rb:183:in `loop'
+/Library/Ruby/Gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/solo.rb:183:in `run_application'
+/Library/Ruby/Gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application.rb:67:in `run'
+/Library/Ruby/Gems/1.8/gems/chef-0.10.4/bin/chef-solo:25
+/usr/bin/chef-solo:19:in `load'
+/usr/bin/chef-solo:19
