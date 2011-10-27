@@ -20,8 +20,7 @@ package('ssh')
 
 # Pull down bash_config git repo
 package('git')
-user_home_path = File.expand_path('~')
-git "#{user_home_path}/linux_config" do
+git "#{node[:user_home_path]}/linux_config" do
   repository "git://github.com/hstrowd/linux_config.git"
   reference "master"
   action :sync
@@ -41,9 +40,9 @@ local_bashrc = <<EOF
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 EOF
 
-execute "echo '#{local_bashrc}' > #{user_home_path}/linux_config/bash_config/.bashrc_local"
+execute "echo '#{local_bashrc}' > #{node[:user_home_path]}/linux_config/bash_config/.bashrc_local"
 
 # Symlink into the home dir
 %w{bashrc htoprc p4config screenrc vimrc}.each do |config_file|
-  execute "ln -s #{user_home_path}/linux_config/.#{config_file} #{user_home_path}/.#{config_file}"
+  execute "ln -s #{node[:user_home_path]}/linux_config/.#{config_file} #{node[:user_home_path]}/.#{config_file}"
 end

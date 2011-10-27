@@ -10,7 +10,7 @@
 # Sets up my dev environment just the way I like it.
 #
 
+node[:user_home_path] = '/home/cnuapp'
 include_recipe 'emacs'
 include_recipe 'unix_config'
 
-# Install p4v

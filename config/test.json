@@ -1,4 +1,5 @@
 { 
-  "recipes": [ "personal_env_setup" ],
-  "sudo_password": "cnuapp"
+  "recipes": [ "cnuapp_env_setup" ],
+  "sudo_password": "cnuapp",
+  "user_home_path": "/Users/hstrowd"
 }
