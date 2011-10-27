@@ -12,3 +12,5 @@
 
 include_recipe 'emacs'
 include_recipe 'unix_config'
+
+# Install p4v

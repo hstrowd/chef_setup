@@ -15,7 +15,8 @@ package('emacs')
 
 # Pull down emacs configuration git repo
 package('git')
-git "/home/cnuapp/.emacs.d" do
+user_home_path = File.expand_path('~')
+git "#{user_home_path}/.emacs.d" do
   repository "git://github.com/hstrowd/.emacs.git"
   reference "master"
   user  "cnuapp"
